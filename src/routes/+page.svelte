@@ -5,7 +5,7 @@
   import pomoChanLogo from "$lib/assets/logo.svg";
 </script>
 
-<nav id="header" class="flex justify-between pt-4 px-16 sticky top-0">
+<nav id="header" class="flex justify-between pt-4 lg:px-16 sticky top-0">
   <img src="{pomoChanLogo}" alt="PomoChan Logo" />
 
   <div>
