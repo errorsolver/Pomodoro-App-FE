@@ -26,12 +26,26 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "PatrickHand-Regular";
+  src: url("/fonts/PatrickHand-Regular.ttf");
+  font-weight: 700;
+}
+
 body {
   font-family: "Caveat-Regular", sans-serif;
 }
 
 strong {
   font-family: "Caveat-Bold", sans-serif;
+}
+
+.caveatbold {
+  font-family: "Caveat-Bold", sans-serif;
+}
+
+.patrickhand {
+  font-family: "PatrickHand-Regular", sans-serif;
 }
 
 body {
