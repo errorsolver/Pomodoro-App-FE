@@ -1,3 +1,35 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@font-face {
+  font-family: "Caveat-Regular";
+  src: url("/fonts/Caveat-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Caveat-Medium";
+  src: url("/fonts/Caveat-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Caveat-SemiBold";
+  src: url("/fonts/Caveat-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Caveat-Bold";
+  src: url("/fonts/Caveat-Bold.ttf");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Caveat-Regular", sans-serif;
+}
+
+body {
+  background-color: #f8f8f6;
+}
