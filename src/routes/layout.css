@@ -30,6 +30,15 @@ body {
   font-family: "Caveat-Regular", sans-serif;
 }
 
+strong {
+  font-family: "Caveat-Bold", sans-serif;
+}
+
 body {
   background-color: #f8f8f6;
+}
+
+nav#header {
+  background-color: #f8f8f6;
+  z-index: 10;
 }
