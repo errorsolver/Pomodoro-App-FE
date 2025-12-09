@@ -1,16 +1,17 @@
 <script>
-  import { onDestroy } from "svelte";
-  import Container from "$lib/assets/img/Container.svg?url";
-  import ReadingWoman from "$lib/assets/img/ReadingWoman.svg?url";
-  import btnPlay from "$lib/assets/img/BtnPlay.svg?url";
-  import btnPrev from "$lib/assets/img/BtnPrev.svg?url";
-  import btnNext from "$lib/assets/img/BtnNext.svg?url";
-  import DotActive from "$lib/assets/img/DotActive.svg?url";
-  import DotInActive from "$lib/assets/img/DotInActive.svg?url";
-  import MenuTable from "$lib/components/MenuTable.svelte";
+  import { onDestroy } from 'svelte';
+  import Container from '$lib/assets/img/Container.svg?url';
+  import ReadingWoman from '$lib/assets/img/ReadingWoman.svg?url';
+  import btnPlay from '$lib/assets/img/BtnPlay.svg?url';
+  import btnPause from '$lib/assets/img/BtnPause.svg?url';
+  import btnPrev from '$lib/assets/img/BtnPrev.svg?url';
+  import btnNext from '$lib/assets/img/BtnNext.svg?url';
+  import DotActive from '$lib/assets/img/DotActive.svg?url';
+  import DotInActive from '$lib/assets/img/DotInActive.svg?url';
+  import MenuTable from '$lib/components/MenuTable.svelte';
 
   let isRunning = false;
-  let timeInSeconds = 1 * 60; // 25 minutes in seconds
+  let timeInSeconds = 1 * 60;
   let interval;
 
   $: minutes = Math.floor(timeInSeconds / 60);
@@ -19,7 +20,7 @@
 
   const handleStart = () => {
     isRunning = !isRunning;
-    
+
     if (isRunning) {
       interval = setInterval(() => {
         if (timeInSeconds > 0) {
@@ -49,7 +50,11 @@
   <img src={Container} alt="" class="background-image" />
   <div class="hero-content">
     <p class="caveatbold text-4xl mb-2">Motivation Message</p>
-    <input class="patrickhand text-center w-full bg-transparent border-none" placeholder="Click here to change task name" value="" />
+    <input
+      class="patrickhand text-center w-full bg-transparent border-none"
+      placeholder="Click here to change task name"
+      value=""
+    />
     <div class="mx-auto flex justify-center gap-12 mt-4 mb-4">
       <button>
         <img src={btnPrev} alt="preview button" width="25px" />
@@ -62,7 +67,10 @@
       </button>
     </div>
     <small class="patrickhand">Music - Lo Fi Chill Out</small>
-    <time datetime={formattedTime} class="block text-8xl font-black">{formattedTime}</time>
+    <time datetime={formattedTime} class="block text-8xl font-black"
+      >{formattedTime}</time
+    >
+    <!-- TODO: Next buat tipe pomodoro dan run cycle short break long break -->
     <div class="flex justify-center gap-4 mt-4">
       <img src={DotActive} class="dot" alt="active dot" width="18px" />
       <img src={DotInActive} class="dot" alt="inactive dot" width="18px" />
@@ -75,7 +83,11 @@
 
     <div class="mx-auto flex justify-center gap-12 mt-4">
       <button on:click={handleStart}>
-        <img src={btnPlay} alt="play button" width="20px" />
+        {#if isRunning}
+          <img src={btnPause} alt="pause button" width="20px" />
+        {:else}
+          <img src={btnPlay} alt="play button" width="20px" />
+        {/if}
       </button>
     </div>
   </div>
