@@ -1,8 +1,12 @@
 <script>
   import MenuTable from "$lib/components/MenuTable.svelte";
 
+  let { children } = $props();
 </script>
 
-<slot />
+{@render children?.()}
 
 <MenuTable />
+
+<style>
+</style>

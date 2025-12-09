@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center mt-8 sticky bottom-0">
+<div class="flex flex-col items-center justify-self-center mt-8 fixed bottom-4 z-999">
   <div class="mt-10">
     <img src="/icons/meja.svg" alt="desk menu" />
   </div>
