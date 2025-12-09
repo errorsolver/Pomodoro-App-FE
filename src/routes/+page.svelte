@@ -1,25 +1,21 @@
 <script>
-  import ComingBackBtn from "$lib/components/BtnComingBack.svelte";
-  import CreateSpaceBtn from "$lib/components/BtnCreateSpace.svelte";
-  import HeroGirl from "$lib/components/HeroGirl.svelte";
-  import pomoChanLogo from "$lib/assets/logo.svg";
+  import ComingBackBtn from '$lib/assets/img/BtnComingBack.svg?url';
+  import CreateSpaceBtn from '$lib/assets/img/BtnCreateSpace.svg?url';
+  import HeroGirl from '$lib/assets/img/HeroGirl.svg?url';
+  import pomoChanLogo from '$lib/assets/logo.svg?url';
 </script>
 
 <nav id="header" class="flex justify-between pt-4 lg:px-16 sticky top-0">
-  <img src="{pomoChanLogo}" alt="PomoChan Logo" />
+  <img src={pomoChanLogo} alt="PomoChan Logo" />
 
-  <div>
-    <button
-      title="Create Space"
-      class="create-space"
-      on:click={alert("Create space!")}
-    >
-      <CreateSpaceBtn />
-    </button>
+  <div class="flex gap-5">
+    <a title="create-space" href="/register">
+      <img src={CreateSpaceBtn} alt="Create Space" />
+    </a>
 
-    <button title="Come Back" class="comeback" on:click={alert("Coming back!")}>
-      <ComingBackBtn />
-    </button>
+    <a title="comeback" href="/login">
+      <img src={ComingBackBtn} alt="Come Back" />
+    </a>
   </div>
 </nav>
 
@@ -31,7 +27,7 @@
     >
   </div>
 
-  <div id="hero">
-    <HeroGirl />
+  <div id="hero" class="flex justify-center">
+    <img src={HeroGirl} width="60%" alt="Girl Sitting">
   </div>
 </div>
