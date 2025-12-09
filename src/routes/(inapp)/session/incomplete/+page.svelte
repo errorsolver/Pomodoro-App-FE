@@ -26,7 +26,7 @@
     id="add-card"
     class="wrap sticky top-30 col-span-3 col-end-10 gap-4"
   >
-    <div class="flex flex-col px-6 py-12 w-100 aspect-[457/558]">
+    <div class="flex flex-col m-4 px-4 w-100 aspect-[457/558]">
       <img src={ContainerAdd} class="background-image" alt="" />
       <img
         src={ContainerProfile}
