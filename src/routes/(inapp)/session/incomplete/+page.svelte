@@ -3,8 +3,8 @@
   import ContainerAdd from "$lib/assets/img/ContainerAdd.svg";
   import ContainerProfile from "$lib/assets/img/ContainerProfile.svg";
   import Stepper from "$lib/components/Stepper.svelte";
-  import BtnSave from "$lib/assets/icons/BtnSave.svg";
-  import BtnCancel from "$lib/assets/icons/BtnCancel.svg";
+  import BtnSave from "$lib/assets/img/BtnSave.svg";
+  import BtnCancel from "$lib/assets/img/BtnCancel.svg";
 
   const handleSubmit = () => {
     alert("submit");

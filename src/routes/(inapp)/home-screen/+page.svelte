@@ -2,11 +2,11 @@
   import { onDestroy } from "svelte";
   import Container from "$lib/assets/img/container.svg";
   import mainImg from "$lib/assets/img/main-img.svg";
-  import btnPlay from "$lib/assets/icons/BtnPlay.svg";
-  import btnPrev from "$lib/assets/icons/BtnPrev.svg";
-  import btnNext from "$lib/assets/icons/BtnNext.svg";
-  import DotActive from "$lib/assets/icons/DotActive.svg";
-  import DotInActive from "$lib/assets/icons/DotInActive.svg";
+  import btnPlay from "$lib/assets/img/BtnPlay.svg";
+  import btnPrev from "$lib/assets/img/BtnPrev.svg";
+  import btnNext from "$lib/assets/img/BtnNext.svg";
+  import DotActive from "$lib/assets/img/DotActive.svg";
+  import DotInActive from "$lib/assets/img/DotInActive.svg";
   import MenuTable from "$lib/components/MenuTable.svelte";
 
   let isRunning = false;
