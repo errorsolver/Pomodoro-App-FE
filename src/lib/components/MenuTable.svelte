@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center justify-self-center mt-8 fixed bottom-4 z-999">
+<div class="flex flex-col items-center justify-self-center fixed bottom-0 w-screen z-999 bg-linear-to-t from-white from-41% to-transparent to-88%">
   <div class="mt-10">
     <img src="/icons/meja.svg" alt="desk menu" />
   </div>

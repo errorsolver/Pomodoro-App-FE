@@ -13,9 +13,11 @@
   let search = $derived(page.url.search);
 </script>
 
-<div class="mt-8">
-  <div class="sticky top-2 z-999">
-    <p class="text-3xl text-center">Session</p>
+<div class="">
+  <div class="sticky top-0 pt-2 z-999 bg-linear-to-b from-white from-82% to-transparent to-100% pb-6">
+    <p class="text-3xl text-center">
+      Session
+    </p>
     <div class="flex justify-center space-x-4 mt-4">
       <a href="/session/completed">
         {#if pathname.endsWith("/completed")}
