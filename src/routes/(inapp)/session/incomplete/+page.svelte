@@ -72,7 +72,7 @@
 
 <style>
   input:focus {
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0);
+    box-shadow: none;
   }
   .wrap {
     aspect-ratio: 457 / 558;
