@@ -35,9 +35,10 @@
         alt="Profile"
       />
 
-      <div class="grow pt-6">
+      <div class="grow py-6">
         <input
-          class="font-bold mb-4 bg-transparent border-none p-0 w-full"
+          name="taskName"
+          class="font-bold text-xl mb-4 bg-transparent border-none p-0 w-full"
           placeholder="Input Task Name"
         />
         <div class="patrickhand flex justify-between mb-2">
@@ -56,20 +57,23 @@
           <p>Long Break Time</p>
           <Stepper label={"min"} />
         </div>
-    </div>
-    <div class="flex justify-evenly">
-      <button type="submit" on:click={handleSubmit}>
-        <img src={BtnSave} alt="Save Button" />
-      </button>
-      <button type="button" on:click={handleCancel}>
-        <img src={BtnCancel} alt="Cancel Button" />
-      </button>
-    </div>
+      </div>
+      <div class="flex justify-evenly">
+        <button type="submit" on:click={handleSubmit}>
+          <img src={BtnSave} alt="Save Button" />
+        </button>
+        <button type="button" on:click={handleCancel}>
+          <img src={BtnCancel} alt="Cancel Button" />
+        </button>
+      </div>
     </div>
   </form>
 </div>
 
 <style>
+  input:focus {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0);
+  }
   .wrap {
     aspect-ratio: 457 / 558;
     display: flex;
