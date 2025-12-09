@@ -19,7 +19,7 @@
         <h1 class="text-5xl font-bold mb-2">Come back in</h1>
         <p class="patrickhand mb-8">Find your calm again.</p>
 
-        <form class="flex flex-col">
+        <form action="/home-screen" class="flex flex-col">
             <label for="email" class="font-bold">Email</label>
             <input
                 id="email"

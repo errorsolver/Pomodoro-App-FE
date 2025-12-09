@@ -16,7 +16,7 @@
         <h1 class="text-5xl font-bold mb-2">Create a space</h1>
         <p class="patrickhand mb-8">A calm place to keep your focus.</p>
 
-        <form class="flex flex-col">
+        <form action="/login" class="flex flex-col">
             <label for="spaceName" class="font-bold">Full Name</label>
             <input
                 id="spaceName"
