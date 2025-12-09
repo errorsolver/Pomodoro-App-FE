@@ -26,7 +26,7 @@
     <a href={void 0} class="cursor-not-allowed">
       <img src={Settings} alt="settings menu" />
     </a>
-    <a href={void 0} class="cursor-not-allowed">
+    <a href="/">
       <img src={Logout} alt="logout" />
     </a>
   </div>
