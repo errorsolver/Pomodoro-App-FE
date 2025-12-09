@@ -37,7 +37,7 @@
 
       <div class="grow pt-6">
         <input
-          class="font-bold mb-4 bg-transparent border-none p-0"
+          class="font-bold mb-4 bg-transparent border-none p-0 w-full"
           placeholder="Input Task Name"
         />
         <div class="patrickhand flex justify-between mb-2">
