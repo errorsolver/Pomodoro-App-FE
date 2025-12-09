@@ -1,7 +1,7 @@
 <script>
   import { onDestroy } from "svelte";
-  import Container from "$lib/assets/img/container.svg?url";
-  import mainImg from "$lib/assets/img/main-img.svg?url";
+  import Container from "$lib/assets/img/Container.svg?url";
+  import ReadingWoman from "$lib/assets/img/ReadingWoman.svg?url";
   import btnPlay from "$lib/assets/img/BtnPlay.svg?url";
   import btnPrev from "$lib/assets/img/BtnPrev.svg?url";
   import btnNext from "$lib/assets/img/BtnNext.svg?url";
@@ -70,7 +70,7 @@
       <img src={DotInActive} class="dot" alt="inactive dot" width="18px" />
     </div>
     <div class="image mt-8">
-      <img src={mainImg} alt="" />
+      <img src={ReadingWoman} alt="" />
     </div>
 
     <div class="mx-auto flex justify-center gap-12 mt-4">
