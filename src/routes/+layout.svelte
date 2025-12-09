@@ -1,6 +1,6 @@
 <script>
 	import './layout.css';
-	import pomoChanLogo from '$lib/assets/logo.svg';
+	import pomoChanLogo from '$lib/assets/logo.svg?url';
 	
 	let { children } = $props();
 </script>

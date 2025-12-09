@@ -1,6 +1,6 @@
 <script>
-  import ContainerHorizontal from "$lib/assets/img/ContainerHorizontal.svg";
-  import ContainerProfile from "$lib/assets/img/ContainerProfile.svg";
+  import ContainerHorizontal from '$lib/assets/img/ContainerHorizontal.svg?url';
+  import ContainerProfile from '$lib/assets/img/ContainerProfile.svg?url';
 </script>
 
 <div class="wrap p-4">

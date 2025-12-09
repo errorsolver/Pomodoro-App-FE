@@ -1,5 +1,5 @@
 <script>
-  import ContainerProfile from "$lib/assets/img/ContainerProfile.svg";
+  import ContainerProfile from '$lib/assets/img/ContainerProfile.svg?url';
 
   let {
     focusCount = 6,

@@ -1,9 +1,9 @@
 <script>
   import { page } from "$app/state";
-  import BtnCompleted from "$lib/assets/img/BtnCompleted.svg";
-  import BtnIncomplete from "$lib/assets/img/BtnIncomplete.svg";
-  import BtnCompletedSelected from "$lib/assets/img/BtnCompletedSelected.svg";
-  import BtnIncompleteSelected from "$lib/assets/img/BtnIncompleteSelected.svg";
+  import BtnCompleted from "$lib/assets/img/BtnCompleted.svg?url";
+  import BtnIncomplete from "$lib/assets/img/BtnIncomplete.svg?url";
+  import BtnCompletedSelected from "$lib/assets/img/BtnCompletedSelected.svg?url";
+  import BtnIncompleteSelected from "$lib/assets/img/BtnIncompleteSelected.svg?url";
   import { json } from "@sveltejs/kit";
 
   let { children } = $props();

@@ -1,6 +1,6 @@
 <script>
-  import BtnArrowLeftOutline from "$lib/assets/img/BtnArrowLeftOutline.svg";
-  import BtnArrowRightOutline from "$lib/assets/img/BtnArrowRightOutline.svg";
+  import BtnArrowLeftOutline from "$lib/assets/img/BtnArrowLeftOutline.svg?url";
+  import BtnArrowRightOutline from "$lib/assets/img/BtnArrowRightOutline.svg?url";
 
   let { label = "" } = $$props;
   let value = 1;
