@@ -3,9 +3,9 @@
     import EyeOpen from '$lib/assets/img/EyeOpen.svg?url';
     import EyeClosed from '$lib/assets/img/EyeClosed.svg?url';
     import BtnLogin from '$lib/assets/img/BtnLogin.svg?url';
-    import BtnSigninGoogle from '$lib/assets/img/BtnSignInGoogle.svg?url';
-    import BtnSigninApple from '$lib/assets/img/BtnSignInApple.svg?url';
-    import BtnSigninFacebook from '$lib/assets/img/BtnSignInFacebook.svg?url';
+    import BtnSignInGoogle from '$lib/assets/img/BtnSignInGoogle.svg?url';
+    import BtnSignInApple from '$lib/assets/img/BtnSignInApple.svg?url';
+    import BtnSignInFacebook from '$lib/assets/img/BtnSignInFacebook.svg?url';
 
     let isShowPassword = false;
 </script>
