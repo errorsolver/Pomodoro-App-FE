@@ -26,7 +26,7 @@
     id="add-card"
     class="wrap sticky top-30 col-span-3 col-end-10 gap-4"
   >
-    <div class="flex flex-col m-4 px-4 w-100 aspect-[457/558]">
+    <div class="flex flex-col justify-center m-4 px-4 w-100 aspect-[457/558]">
       <img src={ContainerAdd} class="background-image" alt="" width="auto" height="auto" />
       <img
         src={ContainerProfile}
@@ -35,11 +35,11 @@
         alt="Profile"
       />
 
-      <div class="grow py-6">
+      <div class="pt-6 pb-3">
         <input
           name="taskName"
           class="font-bold text-xl mb-4 bg-transparent border-none p-0 w-full"
-          placeholder="Input Task Name"
+          placeholder="Input Task Name Here"
         />
         <div class="patrickhand flex justify-between mb-2">
           <p>Focus Count</p>
@@ -60,10 +60,10 @@
       </div>
       <div class="flex justify-evenly">
         <button type="submit" on:click={handleSubmit}>
-          <img src={BtnSave} alt="Save Button" width="auto" height="auto" />
+          <img src={BtnSave} alt="Save Button" width="75" height="auto" />
         </button>
         <button type="button" on:click={handleCancel}>
-          <img src={BtnCancel} alt="Cancel Button" width="auto" height="auto" />
+          <img src={BtnCancel} alt="Cancel Button" width="75" height="auto" />
         </button>
       </div>
     </div>
