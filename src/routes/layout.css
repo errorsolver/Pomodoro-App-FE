@@ -3,7 +3,6 @@
 @plugin '@tailwindcss/typography';
 
 * {
-  user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
 }
@@ -56,6 +55,11 @@ strong {
 
 .patrickhand {
   font-family: "PatrickHand-Regular", sans-serif;
+}
+
+img:not([width]):not([height]) {
+  width: auto;
+  height: auto;
 }
 
 body {

@@ -47,7 +47,7 @@
 </script>
 
 <div class="hero-section px-100 py-6 mt-5">
-  <img src={Container} alt="" class="background-image" />
+  <img src={Container} alt="" class="background-image" width="auto" height="auto" />
   <div class="hero-content">
     <p class="caveatbold text-4xl mb-2">Motivation Message</p>
     <input
@@ -78,7 +78,7 @@
       <img src={DotInActive} class="dot" alt="inactive dot" width="18px" />
     </div>
     <div class="image mt-8">
-      <img src={ReadingWoman} alt="" />
+      <img src={ReadingWoman} alt="" width="auto" height="auto" />
     </div>
 
     <div class="mx-auto flex justify-center gap-12 mt-4">

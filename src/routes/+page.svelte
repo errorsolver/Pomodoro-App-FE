@@ -6,15 +6,15 @@
 </script>
 
 <nav id="header" class="flex justify-between pt-4 lg:px-16 sticky top-0">
-  <img src={pomoChanLogo} alt="PomoChan Logo" />
+  <img src={pomoChanLogo} alt="PomoChan Logo" width="auto" height="auto" />
 
   <div class="flex gap-5">
     <a title="create-space" href="/register">
-      <img src={CreateSpaceBtn} alt="Create Space" />
+      <img src={CreateSpaceBtn} alt="Create Space" width="auto" height="auto" />
     </a>
 
     <a title="comeback" href="/login">
-      <img src={ComingBackBtn} alt="Come Back" />
+      <img src={ComingBackBtn} alt="Come Back" width="auto" height="auto" />
     </a>
   </div>
 </nav>
@@ -28,6 +28,6 @@
   </div>
 
   <div id="hero" class="flex justify-center">
-    <img src={HeroGirl} width="60%" alt="Girl Sitting">
+    <img src={HeroGirl} width="60%" height="auto" alt="Girl Sitting">
   </div>
 </div>

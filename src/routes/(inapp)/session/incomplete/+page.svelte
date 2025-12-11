@@ -27,7 +27,7 @@
     class="wrap sticky top-30 col-span-3 col-end-10 gap-4"
   >
     <div class="flex flex-col m-4 px-4 w-100 aspect-[457/558]">
-      <img src={ContainerAdd} class="background-image" alt="" />
+      <img src={ContainerAdd} class="background-image" alt="" width="auto" height="auto" />
       <img
         src={ContainerProfile}
         class="self-center"
@@ -60,10 +60,10 @@
       </div>
       <div class="flex justify-evenly">
         <button type="submit" on:click={handleSubmit}>
-          <img src={BtnSave} alt="Save Button" />
+          <img src={BtnSave} alt="Save Button" width="auto" height="auto" />
         </button>
         <button type="button" on:click={handleCancel}>
-          <img src={BtnCancel} alt="Cancel Button" />
+          <img src={BtnCancel} alt="Cancel Button" width="auto" height="auto" />
         </button>
       </div>
     </div>

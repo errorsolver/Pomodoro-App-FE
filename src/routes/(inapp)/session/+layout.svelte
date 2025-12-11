@@ -21,16 +21,16 @@
     <div class="flex justify-center space-x-4 mt-4">
       <a href="/session/completed">
         {#if pathname.endsWith("/completed")}
-          <img src={BtnCompletedSelected} alt="Button Completed" />
+          <img src={BtnCompletedSelected} alt="Button Completed" width="auto" height="auto" />
         {:else}
-          <img src={BtnCompleted} alt="Button Completed" />
+          <img src={BtnCompleted} alt="Button Completed" width="auto" height="auto" />
         {/if}
       </a>
       <a href="/session/incomplete">
         {#if pathname.endsWith("/incomplete")}
-          <img src={BtnIncompleteSelected} alt="Button Incomplete" />
+          <img src={BtnIncompleteSelected} alt="Button Incomplete" width="auto" height="auto" />
         {:else}
-          <img src={BtnIncomplete} alt="Button Incomplete" />
+          <img src={BtnIncomplete} alt="Button Incomplete" width="auto" height="auto" />
         {/if}
       </a>
     </div>

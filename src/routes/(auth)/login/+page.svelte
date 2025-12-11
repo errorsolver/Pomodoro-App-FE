@@ -12,7 +12,7 @@
 
 <div class="flex gap-40 justify-center h-screen items-center">
     <div>
-        <img src={SleepingWoman} alt="Sleeping Woman" />
+        <img src={SleepingWoman} alt="Sleeping Woman" width="auto" height="auto" />
     </div>
 
     <div>
@@ -49,9 +49,11 @@
                                 src={EyeOpen}
                                 class="-translate-y-1"
                                 alt="Eye Closed"
+                                width="auto"
+                                height="auto"
                             />
                         {:else}
-                            <img src={EyeClosed} alt="Eye Open" />
+                            <img src={EyeClosed} alt="Eye Open" width="auto" height="auto" />
                         {/if}
                     </button>
                 </span>
@@ -61,7 +63,7 @@
             </a>
 
             <button type="submit" class="mt-6 mb-2">
-                <img src={BtnLogin} class="cursor-pointer" alt="" />
+                <img src={BtnLogin} class="cursor-pointer" alt="" width="auto" height="auto" />
             </button>
         </form>
         <p class="text-center patrickhand mb-1">
@@ -73,13 +75,13 @@
         <p class="patrickhand text-center mb-2">Or</p>
         <div class="flex flex-col gap-4">
             <a href={void 0} class="cursor-not-allowed">
-                <img src={BtnSignInGoogle} alt="Login with Google" />
+                <img src={BtnSignInGoogle} alt="Login with Google" width="auto" height="auto" />
             </a>
             <a href={void 0} class="cursor-not-allowed">
-                <img src={BtnSignInApple} alt="Login with Apple" />
+                <img src={BtnSignInApple} alt="Login with Apple" width="auto" height="auto" />
             </a>
             <a href={void 0} class="cursor-not-allowed">
-                <img src={BtnSignInFacebook} alt="Login with Facebook" />
+                <img src={BtnSignInFacebook} alt="Login with Facebook" width="auto" height="auto" />
             </a>
         </div>
     </div>
