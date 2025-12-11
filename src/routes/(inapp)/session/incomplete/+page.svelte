@@ -35,26 +35,27 @@
         alt="Profile"
       />
 
-      <div class="pt-6 pb-3">
+      <div class="pt-5 pb-5">
         <input
           name="taskName"
           class="font-bold text-xl mb-4 bg-transparent border-none p-0 w-full"
           placeholder="Input Task Name Here"
+          autocomplete="off"
         />
         <div class="patrickhand flex justify-between mb-2">
-          <p>Focus Count</p>
+          <p>focus count</p>
           <Stepper />
         </div>
         <div class="patrickhand flex justify-between mb-2">
-          <p>Focus Time</p>
+          <p>focus time</p>
           <Stepper label={"min"} />
         </div>
         <div class="patrickhand flex justify-between mb-2">
-          <p>Break Time</p>
+          <p>break time</p>
           <Stepper label={"min"} />
         </div>
         <div class="patrickhand flex justify-between mb-2">
-          <p>Long Break Time</p>
+          <p>long break time</p>
           <Stepper label={"min"} />
         </div>
       </div>
