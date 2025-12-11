@@ -3,9 +3,9 @@
     import EyeOpen from '$lib/assets/img/EyeOpen.svg?url';
     import EyeClosed from '$lib/assets/img/EyeClosed.svg?url';
     import BtnLogin from '$lib/assets/img/BtnLogin.svg?url';
-    import BtnSigninGoogle from '$lib/assets/img/BtnSigninGoogle.svg?url';
-    import BtnSigninApple from '$lib/assets/img/BtnSigninApple.svg?url';
-    import BtnSigninFacebook from '$lib/assets/img/BtnSigninFacebook.svg?url';
+    import BtnSigninGoogle from '$lib/assets/img/BtnSignInGoogle.svg?url';
+    import BtnSigninApple from '$lib/assets/img/BtnSignInApple.svg?url';
+    import BtnSigninFacebook from '$lib/assets/img/BtnSignInFacebook.svg?url';
 
     let isShowPassword = false;
 </script>
@@ -73,13 +73,13 @@
         <p class="patrickhand text-center mb-2">Or</p>
         <div class="flex flex-col gap-4">
             <a href={void 0} class="cursor-not-allowed">
-                <img src={BtnSigninGoogle} alt="Login with Google" />
+                <img src={BtnSignInGoogle} alt="Login with Google" />
             </a>
             <a href={void 0} class="cursor-not-allowed">
-                <img src={BtnSigninApple} alt="Login with Apple" />
+                <img src={BtnSignInApple} alt="Login with Apple" />
             </a>
             <a href={void 0} class="cursor-not-allowed">
-                <img src={BtnSigninFacebook} alt="Login with Facebook" />
+                <img src={BtnSignInFacebook} alt="Login with Facebook" />
             </a>
         </div>
     </div>
