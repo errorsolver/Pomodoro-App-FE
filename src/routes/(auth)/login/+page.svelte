@@ -40,6 +40,7 @@
                 />
                 <span class="eye">
                     <button
+                        type="button"
                         class="block"
                         on:click={() => (isShowPassword = !isShowPassword)}
                         style="cursor: pointer;"

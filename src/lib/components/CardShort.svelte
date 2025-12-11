@@ -1,5 +1,6 @@
 <script>
   import ContainerProfile from '$lib/assets/img/ContainerProfile.svg?url';
+  import ContainerHorizontal from '$lib/assets/img/ContainerHorizontal.svg?url';
 
   let {
     focusCount = 6,
@@ -16,7 +17,7 @@
 </script>
 
 <div class="wrap p-4">
-  <img src="" alt="" class="background-image" />
+  <img src={ContainerHorizontal} alt="" class="background-image" />
   <img src={ContainerProfile} alt="" width="80px" />
   <div class="content grow ps-4">
     <p>Name</p>

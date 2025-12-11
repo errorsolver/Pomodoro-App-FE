@@ -2,7 +2,7 @@
   import BtnArrowLeftOutline from "$lib/assets/img/BtnArrowLeftOutline.svg?url";
   import BtnArrowRightOutline from "$lib/assets/img/BtnArrowRightOutline.svg?url";
 
-  let { label = "" } = $$props;
+  let { label = "" } = $props();
   let value = 1;
 
   const increment = () => {
