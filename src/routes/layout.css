@@ -37,6 +37,38 @@
   font-weight: 700;
 }
 
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+strong,
+em,
+b,
+i,
+li,
+a,
+label,
+input,
+textarea,
+button,
+th,
+td,
+caption,
+blockquote,
+pre,
+code {
+  color: #303133;
+}
+
+.secondary-500 {
+  color: #303133;
+}
+
 body {
   font-family: "Caveat-Regular", sans-serif;
 }
