@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import BtnCreateASpace from '$lib/assets/img/BtnCreateASpace.svg?url';
     import SleepingWoman from '$lib/assets/img/SleepingWoman.svg?url';
     import EyeOpen from '$lib/assets/img/EyeOpen.svg?url';
@@ -9,7 +9,7 @@
 
 <div class="flex gap-40 justify-center h-screen items-center">
     <div>
-        <img src={SleepingWoman} alt="Sleeping Woman" />
+        <img src={SleepingWoman} alt="Sleeping Woman Illustration" />
     </div>
 
     <div>
@@ -54,17 +54,17 @@
                             <img
                                 src={EyeOpen}
                                 class="-translate-y-1"
-                                alt="Eye Closed"
+                                alt="Show Password"
                             />
                         {:else}
-                            <img src={EyeClosed} alt="Eye Open" />
+                            <img src={EyeClosed} alt="Hide Password" />
                         {/if}
                     </button>
                 </span>
             </div>
 
             <button type="submit" class="mt-4 cursor-pointer">
-                <img src={BtnCreateASpace} alt="" />
+                <img src={BtnCreateASpace} alt="Create Space Button" />
             </button>
         </form>
         <p class="mt-4 text-center patrickhand">

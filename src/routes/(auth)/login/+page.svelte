@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import SleepingWoman from '$lib/assets/img/SleepingWoman.svg?url';
     import EyeOpen from '$lib/assets/img/EyeOpen.svg?url';
     import EyeClosed from '$lib/assets/img/EyeClosed.svg?url';
@@ -14,7 +14,7 @@
     <div>
         <img
             src={SleepingWoman}
-            alt="Sleeping Woman"
+            alt="Sleeping Woman Illustration"
             width="auto"
             height="auto"
         />
@@ -53,14 +53,14 @@
                             <img
                                 src={EyeOpen}
                                 class="-translate-y-1"
-                                alt="Eye Closed"
+                                alt="Show Password"
                                 width="auto"
                                 height="auto"
                             />
                         {:else}
                             <img
                                 src={EyeClosed}
-                                alt="Eye Open"
+                                alt="Hide Password"
                                 width="auto"
                                 height="auto"
                             />
@@ -79,7 +79,7 @@
                 <img
                     src={BtnLogin}
                     class="cursor-pointer"
-                    alt=""
+                    alt="Login Button"
                     width="auto"
                     height="auto"
                 />
@@ -96,7 +96,7 @@
             <a href={void 0} class="cursor-not-allowed">
                 <img
                     src={BtnSignInGoogle}
-                    alt="Login with Google"
+                    alt="Login with Google Button"
                     width="auto"
                     height="auto"
                 />
@@ -104,7 +104,7 @@
             <a href={void 0} class="cursor-not-allowed">
                 <img
                     src={BtnSignInApple}
-                    alt="Login with Apple"
+                    alt="Login with Apple Button"
                     width="auto"
                     height="auto"
                 />
@@ -112,7 +112,7 @@
             <a href={void 0} class="cursor-not-allowed">
                 <img
                     src={BtnSignInFacebook}
-                    alt="Login with Facebook"
+                    alt="Login with Facebook Button"
                     width="auto"
                     height="auto"
                 />
