@@ -4,7 +4,7 @@
 
     export let name = 'Name';
     export let focusCount = 6;
-    export let focusTime = 10000; // detik
+    export let focusTime = 9600; // detik
     export let sessionCount = 7;
 
     const formatFocusTime = (timeInSeconds) => {

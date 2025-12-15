@@ -1,5 +1,4 @@
 <script lang="ts">
-    // +layout.svelte: Layout untuk halaman session (completed/incomplete)
     import { page } from '$app/state';
     import BtnCompleted from '$lib/assets/img/BtnCompleted.svg?url';
     import BtnIncomplete from '$lib/assets/img/BtnIncomplete.svg?url';
