@@ -20,7 +20,7 @@
 <div class="hero-section px-100 py-6 mt-5">
     <img
         src={Container}
-        alt=""
+        alt="Background Container"
         class="background-image"
         width="auto"
         height="auto"
