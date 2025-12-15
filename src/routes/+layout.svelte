@@ -1,9 +1,12 @@
-<script>
+
+<script lang="ts">
+	// +layout.svelte: Layout utama aplikasi
 	import './layout.css';
 	import pomoChanLogo from '$lib/assets/logo.svg?url';
 
-	let { children } = $props();
+	export let children;
 </script>
+
 
 <svelte:head>
 	<title>Pomo Chan</title>
@@ -14,4 +17,8 @@
 	<link rel="icon" href={pomoChanLogo} />
 </svelte:head>
 
-{@render children()}
+{#if typeof children === 'function'}
+	{@render children()}
+{:else}
+	{children}
+{/if}
