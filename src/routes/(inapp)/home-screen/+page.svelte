@@ -17,29 +17,31 @@
 
     const WORK_DURATION = 0.2 * 60;
     const SHORT_BREAK_DURATION = 0.1 * 60;
-    const LONG_BREAK_DURATION = 0.3 * 60;
+    const LONG_BREAK_DURATION = 0.25 * 60;
 
     let timeInSeconds = WORK_DURATION;
 
     function nextPhase() {
         if (isWork) {
-            isWork = false;
-            isShortBreak = true;
-            isLongBreak = false;
-            timeInSeconds = SHORT_BREAK_DURATION;
-        } else if (isShortBreak) {
-            sets += 1;
-            if (sets > maxSet) {
+            if (sets === maxSet) {
+                // Setelah work terakhir, langsung long break
                 isWork = false;
                 isShortBreak = false;
                 isLongBreak = true;
                 timeInSeconds = LONG_BREAK_DURATION;
             } else {
-                isWork = true;
-                isShortBreak = false;
+                // Work selesai, ke short break
+                isWork = false;
+                isShortBreak = true;
                 isLongBreak = false;
-                timeInSeconds = WORK_DURATION;
+                timeInSeconds = SHORT_BREAK_DURATION;
             }
+        } else if (isShortBreak) {
+            sets += 1;
+            isWork = true;
+            isShortBreak = false;
+            isLongBreak = false;
+            timeInSeconds = WORK_DURATION;
         } else if (isLongBreak) {
             sets = 1;
             isWork = true;
