@@ -10,6 +10,11 @@
   import DotActive from '$lib/assets/img/DotActive.svg?url';
   import DotInActive from '$lib/assets/img/DotInActive.svg?url';
   import MenuTable from '$lib/components/MenuTable.svelte';
+  import SetsProgress from './components/SetsProgress.svelte';
+  import StatusImage from './components/StatusImage.svelte';
+  import MusicPlayer from './components/MusicPlayer.svelte';
+  import MotivationMessage from './components/MotivationMessage.svelte';
+  import InputPomoName from './InputPomoName.svelte';
 
   let isRunning = false;
   let isWork = true;
@@ -17,8 +22,8 @@
   let isLongBreak = false;
   let timeInSeconds = 1 * 60;
   let interval;
-  let sets = 1
-  const maxSet = 4
+  let sets = 1;
+  const maxSet = 4;
 
   $: minutes = Math.floor(timeInSeconds / 60);
   $: seconds = timeInSeconds % 60;
@@ -53,51 +58,36 @@
 </script>
 
 <div class="hero-section px-100 py-6 mt-5">
-  <img src={Container} alt="" class="background-image" width="auto" height="auto" />
+  <img
+    src={Container}
+    alt=""
+    class="background-image"
+    width="auto"
+    height="auto"
+  />
   <div class="hero-content">
-    <p class="caveatbold text-4xl mb-2">Motivation Message</p>
-    <input
-      class="patrickhand text-center w-full bg-transparent border-none"
-      placeholder="Click here to change task name"
-      value=""
-    />
-    <div class="mx-auto flex justify-center gap-12 mt-4 mb-4">
-      <button>
-        <img src={btnPrev} alt="preview button" width="25px" />
-      </button>
-      <button>
-        <img src={btnPlay} alt="play button" width="20px" />
-      </button>
-      <button>
-        <img src={btnNext} alt="next button" width="25px" />
-      </button>
-    </div>
+    <MotivationMessage />
+    <InputPomoName />
+    <MusicPlayer />
+
     <small class="patrickhand">Music - Lo Fi Chill Out</small>
     <time datetime={formattedTime} class="block text-8xl font-black"
-      >{formattedTime}</time
-    >
+      >
+      {formattedTime}
+    </time>
     <!-- TODO: Next buat tipe pomodoro dan run cycle short break long break -->
-    <div class="flex justify-center gap-4 mt-4">
-      {#each {length: sets}}
-        <img src={DotActive} class="dot" alt="active dot" width="18px" />
-      {/each}
-      {#each {length: maxSet - sets}}
-        <img src={DotInActive} class="dot" alt="inactive dot" width="18px" />
-      {/each}
-    </div>
-
-    <div class="flex justify-center mt-8">
-      {#if isWork}
-        <img src={ReadingWoman} alt="" class="status-image" />
-      {:else}
-        <img src={WomanNap} alt="test" class="status-image" />
-      {/if}
-    </div>
+    <SetsProgress {sets} {maxSet} />
+    <StatusImage {isWork} />
 
     <div class="mx-auto flex justify-center gap-12 mt-4">
       <button on:click={handleStart}>
         {#if isRunning}
-          <img src={btnPause} class="run-btn" alt="pause button" loading="lazy" />
+          <img
+            src={btnPause}
+            class="run-btn"
+            alt="pause button"
+            loading="lazy"
+          />
         {:else}
           <img src={btnPlay} class="run-btn" alt="play button" loading="lazy" />
         {/if}
@@ -107,9 +97,6 @@
 </div>
 
 <style scoped>
-  input {
-    box-shadow: none;
-  }
   .hero-section {
     position: relative;
     display: flex;
@@ -131,10 +118,6 @@
     position: relative;
     z-index: 1;
     text-align: center;
-  }
-
-  .status-image {
-    height: 180px;
   }
 
   .run-btn {
