@@ -14,27 +14,27 @@
 
 <div class="mx-auto flex justify-center gap-12 mt-4 mb-4">
     <button>
-        <img src={btnPrev} alt="preview button" width="25px" />
+        <img src={btnPrev} alt="Previous Button" width="25px" />
     </button>
     <button on:click={handlePlayPause} class="play-btn">
         {#if !isPlaying}
             <img
                 src={btnPlay}
-                alt="play button"
+                alt="Play Button"
                 class="play-img"
                 height="23px"
             />
         {:else}
             <img
                 src={btnPause}
-                alt="pause button"
+                alt="Pause Button"
                 class="play-img"
                 height="23px"
             />
         {/if}
     </button>
     <button>
-        <img src={btnNext} alt="next button" width="25px" />
+        <img src={btnNext} alt="Next Button" width="25px" />
     </button>
 </div>
 <small class="patrickhand">{musicTitle}</small>

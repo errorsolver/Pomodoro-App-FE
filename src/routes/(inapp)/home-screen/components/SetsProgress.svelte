@@ -8,9 +8,9 @@
 
 <div class="flex justify-center gap-4 mt-4">
     {#each { length: sets }}
-        <img src={DotActive} class="dot" alt="active dot" width="18px" />
+        <img src={DotActive} class="dot" alt="Active Dot" width="18px" />
     {/each}
     {#each { length: maxSet - sets }}
-        <img src={DotInActive} class="dot" alt="inactive dot" width="18px" />
+        <img src={DotInActive} class="dot" alt="Inactive Dot" width="18px" />
     {/each}
 </div>

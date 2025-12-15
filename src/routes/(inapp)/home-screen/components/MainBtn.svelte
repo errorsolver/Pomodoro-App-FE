@@ -3,7 +3,7 @@
     import btnPlay from '$lib/assets/img/BtnPlay.svg?url';
     import btnPause from '$lib/assets/img/BtnPause.svg?url';
 
-    export let isRunning = false
+    export let isRunning = false;
 
     const dispatch = createEventDispatcher();
     const handleStart = () => {
@@ -18,14 +18,14 @@
             <img
                 src={btnPause}
                 class="run-btn"
-                alt="pause button"
+                alt="Pause Button"
                 loading="lazy"
             />
         {:else}
             <img
                 src={btnPlay}
                 class="run-btn"
-                alt="play button"
+                alt="Play Button"
                 loading="lazy"
             />
         {/if}
