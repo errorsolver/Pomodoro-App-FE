@@ -1,12 +1,12 @@
 <script>
+    // CardShort: Komponen kartu profil pendek
     import ContainerProfile from '$lib/assets/img/ContainerProfile.svg?url';
     import ContainerListIncomplete from '$lib/assets/img/ContainerListIncomplete.svg?url';
 
-    let {
-        focusCount = 6,
-        focusTime = 10000, // detik
-        sessionCount = 7,
-    } = $props();
+    export let name = 'Name';
+    export let focusCount = 6;
+    export let focusTime = 10000; // detik
+    export let sessionCount = 7;
 
     const formatFocusTime = (timeInSeconds) => {
         const totalMinutes = Math.floor(timeInSeconds / 60);
@@ -17,10 +17,10 @@
 </script>
 
 <div class="wrap p-4">
-    <img src={ContainerListIncomplete} alt="" class="background-image" />
-    <img src={ContainerProfile} alt="" width="80px" />
+    <img src={ContainerListIncomplete} alt="background" class="background-image" />
+    <img src={ContainerProfile} alt="profile" width="80px" />
     <div class="content grow ps-4">
-        <p>Name</p>
+        <p>{name}</p>
         <div class="flex justify-between">
             <p>Focus Count</p>
             <p>{focusCount} Times</p>

@@ -1,9 +1,10 @@
 <script>
+    // Stepper: Komponen stepper angka dengan label
     import BtnArrowLeftOutline from '$lib/assets/img/BtnArrowLeftOutline.svg?url';
     import BtnArrowRightOutline from '$lib/assets/img/BtnArrowRightOutline.svg?url';
 
-    let { label = '' } = $$props;
-    let value = 1;
+    export let label = '';
+    export let value = 1;
 
     const increment = () => {
         value += 1;
@@ -17,10 +18,10 @@
 
 <div class="flex w-24">
     <button type="button" on:click={decrement}>
-        <img src={BtnArrowLeftOutline} alt="" />
+        <img src={BtnArrowLeftOutline} alt="decrement" />
     </button>
     <span class="patrickhand text-center grow">{value} {label}</span>
     <button type="button" on:click={increment}>
-        <img src={BtnArrowRightOutline} alt="" />
+        <img src={BtnArrowRightOutline} alt="increment" />
     </button>
 </div>

@@ -1,24 +1,38 @@
-<script>
+
+<script lang="ts">
+    // CardLong: Komponen kartu profil panjang
     import ContainerHorizontal from '$lib/assets/img/ContainerHorizontal.svg?url';
     import ContainerProfile from '$lib/assets/img/ContainerProfile.svg?url';
+
+    export let name = 'Name';
+    export let focusCount = 0;
+    export let focusTime = 9600; // detik
+    export let sessionCount = 2;
+
+    const formatFocusTime = (timeInSeconds: number) => {
+        const totalMinutes = Math.floor(timeInSeconds / 60);
+        const hours = Math.floor(totalMinutes / 60);
+        const minutes = totalMinutes % 60;
+        return `${hours}h ${minutes}m`;
+    };
 </script>
 
 <div class="wrap p-4">
-    <img src={ContainerHorizontal} alt="" class="background-image" />
-    <img src={ContainerProfile} alt="" width="80px" />
+    <img src={ContainerHorizontal} alt="background" class="background-image" />
+    <img src={ContainerProfile} alt="profile" width="80px" />
     <div class="content grow ps-4">
-        <p>Name</p>
+        <p>{name}</p>
         <div class="flex justify-between">
             <p>Focus Count</p>
-            <p>0 Times</p>
+            <p>{focusCount} Times</p>
         </div>
         <div class="flex justify-between">
             <p>Focus Time</p>
-            <p>2h 40m</p>
+            <p>{formatFocusTime(focusTime)}</p>
         </div>
         <div class="flex justify-between">
             <p>Session Count</p>
-            <p>2 Times</p>
+            <p>{sessionCount} Times</p>
         </div>
     </div>
 </div>
