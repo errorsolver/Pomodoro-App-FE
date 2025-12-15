@@ -12,7 +12,7 @@
     };
 </script>
 
-<div class="mx-auto flex justify-center gap-12 mt-4">
+<div class="mx-auto flex justify-center gap-12 mt-4" style="height: 20px;">
     <button on:click={handleStart}>
         {#if isRunning}
             <img
