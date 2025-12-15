@@ -1,5 +1,6 @@
 <script>
   import ContainerProfile from '$lib/assets/img/ContainerProfile.svg?url';
+  import ContainerListIncomplete from '$lib/assets/img/ContainerListIncomplete.svg?url';
 
   let {
     focusCount = 6,
@@ -16,7 +17,7 @@
 </script>
 
 <div class="wrap p-4">
-  <img src="" alt="" class="background-image" />
+  <img src={ContainerListIncomplete} alt="" class="background-image" />
   <img src={ContainerProfile} alt="" width="80px" />
   <div class="content grow ps-4">
     <p>Name</p>

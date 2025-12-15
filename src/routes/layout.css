@@ -89,11 +89,6 @@ strong {
   font-family: "PatrickHand-Regular", sans-serif;
 }
 
-img:not([width]):not([height]) {
-  width: auto;
-  height: auto;
-}
-
 body {
   background-color: #f8f8f6;
 }

@@ -2,6 +2,7 @@
   import { onDestroy } from 'svelte';
   import Container from '$lib/assets/img/Container.svg?url';
   import ReadingWoman from '$lib/assets/img/ReadingWoman.svg?url';
+  import WomanNap from '$lib/assets/img/WomanNap.svg?url';
   import btnPlay from '$lib/assets/img/BtnPlay.svg?url';
   import btnPause from '$lib/assets/img/BtnPause.svg?url';
   import btnPrev from '$lib/assets/img/BtnPrev.svg?url';
@@ -11,8 +12,13 @@
   import MenuTable from '$lib/components/MenuTable.svelte';
 
   let isRunning = false;
+  let isWork = true;
+  let isShortBreak = false;
+  let isLongBreak = false;
   let timeInSeconds = 1 * 60;
   let interval;
+  let sets = 1
+  const maxSet = 4
 
   $: minutes = Math.floor(timeInSeconds / 60);
   $: seconds = timeInSeconds % 60;
@@ -72,21 +78,28 @@
     >
     <!-- TODO: Next buat tipe pomodoro dan run cycle short break long break -->
     <div class="flex justify-center gap-4 mt-4">
-      <img src={DotActive} class="dot" alt="active dot" width="18px" />
-      <img src={DotInActive} class="dot" alt="inactive dot" width="18px" />
-      <img src={DotInActive} class="dot" alt="inactive dot" width="18px" />
-      <img src={DotInActive} class="dot" alt="inactive dot" width="18px" />
+      {#each {length: sets}}
+        <img src={DotActive} class="dot" alt="active dot" width="18px" />
+      {/each}
+      {#each {length: maxSet - sets}}
+        <img src={DotInActive} class="dot" alt="inactive dot" width="18px" />
+      {/each}
     </div>
-    <div class="image mt-8">
-      <img src={ReadingWoman} alt="" width="auto" height="auto" />
+
+    <div class="flex justify-center mt-8">
+      {#if isWork}
+        <img src={ReadingWoman} alt="" class="status-image" />
+      {:else}
+        <img src={WomanNap} alt="test" class="status-image" />
+      {/if}
     </div>
 
     <div class="mx-auto flex justify-center gap-12 mt-4">
       <button on:click={handleStart}>
         {#if isRunning}
-          <img src={btnPause} alt="pause button" width="20px" />
+          <img src={btnPause} class="run-btn" alt="pause button" loading="lazy" />
         {:else}
-          <img src={btnPlay} alt="play button" width="20px" />
+          <img src={btnPlay} class="run-btn" alt="play button" loading="lazy" />
         {/if}
       </button>
     </div>
@@ -118,5 +131,13 @@
     position: relative;
     z-index: 1;
     text-align: center;
+  }
+
+  .status-image {
+    height: 180px;
+  }
+
+  .run-btn {
+    height: 25px;
   }
 </style>
