@@ -11,7 +11,7 @@
     let interval: ReturnType<typeof setInterval> | null = null;
     let prevTimeInSeconds = timeInSeconds;
 
-    $: if (!isRunning && timeInSeconds !== prevTimeInSeconds) {
+    $: if (timeInSeconds !== prevTimeInSeconds) {
         currentSec = timeInSeconds;
         prevTimeInSeconds = timeInSeconds;
     }
