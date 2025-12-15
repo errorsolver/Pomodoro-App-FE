@@ -8,7 +8,7 @@
 </script>
 
 <div
-    class="flex flex-col items-center justify-self-center fixed bottom-0 pb-4 w-screen z-999 bg-linear-to-t from-white from-54% to-transparent to-88%"
+    class="flex flex-col items-center justify-self-center fixed bottom-0 pb-4 w-screen z-50 bg-linear-to-t from-[#F8F8F6] from-54% to-transparent to-88%"
 >
     <div class="mt-10">
         <img src={TableMenu} alt="menu background" />

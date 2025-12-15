@@ -14,7 +14,7 @@
 
 <div class="">
     <div
-        class="sticky top-0 pt-2 z-999 bg-linear-to-b from-white from-82% to-transparent to-100% pb-6"
+        class="flex flex-col items-center justify-self-center sticky top-0 pb-4 w-screen z-50 bg-linear-to-b from-[#F8F8F6] from-83% to-transparent to-90%"
     >
         <p class="text-3xl text-center">Session</p>
         <div class="flex justify-center space-x-4 mt-4">
