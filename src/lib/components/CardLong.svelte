@@ -1,4 +1,3 @@
-
 <script lang="ts">
     import ContainerHorizontal from '$lib/assets/img/ContainerHorizontal.svg?url';
     import ContainerProfile from '$lib/assets/img/ContainerProfile.svg?url';

@@ -1,8 +1,9 @@
+
 <script lang="ts">
     import { onDestroy } from 'svelte';
 
-    export let timeInSeconds = 0;
-    export let isRunning = false;
+    export let timeInSeconds: number = 0;
+    export let isRunning: boolean = false;
 
     let currentSec = timeInSeconds;
     let interval: ReturnType<typeof setInterval> | null = null;
@@ -14,7 +15,6 @@
     }
 
     $: formattedTime = formatTime(currentSec);
-
     function formatTime(sec: number) {
         const m = Math.floor(sec / 60);
         const s = sec % 60;

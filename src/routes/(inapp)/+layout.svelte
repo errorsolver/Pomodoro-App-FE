@@ -1,4 +1,3 @@
-
 <script lang="ts">
     import MenuTable from '$lib/components/MenuTable.svelte';
 
