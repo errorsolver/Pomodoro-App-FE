@@ -15,7 +15,6 @@
     let sets = 1;
     const maxSet = 4;
 
-    // Default durations (in seconds)
     const WORK_DURATION = 0.2 * 60;
     const SHORT_BREAK_DURATION = 0.1 * 60;
     const LONG_BREAK_DURATION = 0.3 * 60;
@@ -24,29 +23,24 @@
 
     function nextPhase() {
         if (isWork) {
-            // Work finished, go to short break
             isWork = false;
             isShortBreak = true;
             isLongBreak = false;
             timeInSeconds = SHORT_BREAK_DURATION;
         } else if (isShortBreak) {
-            // Short break finished, increment set
             sets += 1;
             if (sets > maxSet) {
-                // All sets done, go to long break
                 isWork = false;
                 isShortBreak = false;
                 isLongBreak = true;
                 timeInSeconds = LONG_BREAK_DURATION;
             } else {
-                // Next set: back to work
                 isWork = true;
                 isShortBreak = false;
                 isLongBreak = false;
                 timeInSeconds = WORK_DURATION;
             }
         } else if (isLongBreak) {
-            // Long break finished, reset cycle
             sets = 1;
             isWork = true;
             isShortBreak = false;
@@ -57,7 +51,7 @@
 
     function handleTimerEnd() {
         nextPhase();
-        isRunning = false;
+        isRunning = true;
     }
 </script>
 
