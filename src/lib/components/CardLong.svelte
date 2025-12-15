@@ -1,6 +1,5 @@
 
 <script lang="ts">
-    // CardLong: Komponen kartu profil panjang
     import ContainerHorizontal from '$lib/assets/img/ContainerHorizontal.svg?url';
     import ContainerProfile from '$lib/assets/img/ContainerProfile.svg?url';
 

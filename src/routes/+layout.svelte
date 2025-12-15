@@ -1,6 +1,5 @@
 
 <script lang="ts">
-	// +layout.svelte: Layout utama aplikasi
 	import './layout.css';
 	import pomoChanLogo from '$lib/assets/logo.svg?url';
 

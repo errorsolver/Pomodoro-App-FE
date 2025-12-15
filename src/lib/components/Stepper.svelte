@@ -1,5 +1,4 @@
 <script>
-    // Stepper: Komponen stepper angka dengan label
     import BtnArrowLeftOutline from '$lib/assets/img/BtnArrowLeftOutline.svg?url';
     import BtnArrowRightOutline from '$lib/assets/img/BtnArrowRightOutline.svg?url';
 

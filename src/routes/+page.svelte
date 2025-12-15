@@ -1,6 +1,5 @@
 
 <script lang="ts">
-    // +page.svelte: Halaman utama landing page
     import ComingBackBtn from '$lib/assets/img/BtnComingBack.svg?url';
     import CreateSpaceBtn from '$lib/assets/img/BtnCreateSpace.svg?url';
     import HeroGirl from '$lib/assets/img/HeroGirl.svg?url';

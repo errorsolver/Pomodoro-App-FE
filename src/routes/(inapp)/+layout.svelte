@@ -1,9 +1,14 @@
-<script>
+
+<script lang="ts">
     import MenuTable from '$lib/components/MenuTable.svelte';
 
-    let { children } = $props();
+    export let children;
 </script>
 
-{@render children?.()}
+{#if typeof children === 'function'}
+    {@render children()}
+{:else}
+    {children}
+{/if}
 
 <MenuTable />

@@ -1,5 +1,4 @@
 <script>
-    // MenuTable: Komponen menu navigasi bawah
     import TableMenu from '$lib/assets/img/TableMenu.svg?url';
     import Stopwatch from '$lib/assets/img/Stopwatch.svg?url';
     import Calendar from '$lib/assets/img/Calendar.svg?url';

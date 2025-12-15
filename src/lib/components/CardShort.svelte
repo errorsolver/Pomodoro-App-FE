@@ -1,5 +1,4 @@
 <script>
-    // CardShort: Komponen kartu profil pendek
     import ContainerProfile from '$lib/assets/img/ContainerProfile.svg?url';
     import ContainerListIncomplete from '$lib/assets/img/ContainerListIncomplete.svg?url';
 
