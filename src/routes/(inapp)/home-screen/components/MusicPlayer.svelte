@@ -1,10 +1,11 @@
 <script>
-    import btnPlay from '$lib/assets/img/BtnPlay.svg';
-    import btnPause from '$lib/assets/img/BtnPause.svg';
-    import btnPrev from '$lib/assets/img/BtnPrev.svg';
-    import btnNext from '$lib/assets/img/BtnNext.svg';
+    import btnPlay from '$lib/assets/img/BtnPlay.svg?url';
+    import btnPause from '$lib/assets/img/BtnPause.svg?url';
+    import btnPrev from '$lib/assets/img/BtnPrev.svg?url';
+    import btnNext from '$lib/assets/img/BtnNext.svg?url';
 
     let isPlaying = false;
+    let musicTitle = 'Lo Fi Chill Out';
 
     const handlePlayPause = () => {
         isPlaying = !isPlaying;
@@ -36,6 +37,7 @@
         <img src={btnNext} alt="next button" width="25px" />
     </button>
 </div>
+<small class="patrickhand">{musicTitle}</small>
 
 <style scoped>
     .play-btn {
