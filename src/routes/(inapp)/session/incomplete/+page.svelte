@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import CardShort from '$lib/components/CardShort.svelte';
     import ContainerAdd from '$lib/assets/img/ContainerAdd.svg?url';
     import ContainerProfile from '$lib/assets/img/ContainerProfile.svg?url';
@@ -35,7 +35,7 @@
             <img
                 src={ContainerAdd}
                 class="background-image"
-                alt=""
+                alt="Add Task Background"
                 width="auto"
                 height="auto"
             />

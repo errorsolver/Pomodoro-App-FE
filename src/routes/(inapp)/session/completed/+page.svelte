@@ -1,5 +1,4 @@
-<script>
-    import { page } from '$app/state';
+<script lang="ts">
     import CardLong from '$lib/components/CardLong.svelte';
 </script>
 

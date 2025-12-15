@@ -1,12 +1,12 @@
-<script>
+<script lang="ts">
+    // +layout.svelte: Layout untuk halaman session (completed/incomplete)
     import { page } from '$app/state';
     import BtnCompleted from '$lib/assets/img/BtnCompleted.svg?url';
     import BtnIncomplete from '$lib/assets/img/BtnIncomplete.svg?url';
     import BtnCompletedSelected from '$lib/assets/img/BtnCompletedSelected.svg?url';
     import BtnIncompleteSelected from '$lib/assets/img/BtnIncompleteSelected.svg?url';
-    import { json } from '@sveltejs/kit';
 
-    let { children } = $props();
+    const { children } = $props<{ children: unknown }>();
 
     let url = $derived(page.url);
     let pathname = $derived(page.url.pathname);
@@ -56,5 +56,9 @@
         </div>
     </div>
 
-    {@render children?.()}
+    {#if typeof children === 'function'}
+        {@render children()}
+    {:else}
+        {children}
+    {/if}
 </div>
