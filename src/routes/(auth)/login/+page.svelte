@@ -12,7 +12,12 @@
 
 <div class="flex gap-40 justify-center h-screen items-center">
     <div>
-        <img src={SleepingWoman} alt="Sleeping Woman" width="auto" height="auto" />
+        <img
+            src={SleepingWoman}
+            alt="Sleeping Woman"
+            width="auto"
+            height="auto"
+        />
     </div>
 
     <div>
@@ -53,17 +58,31 @@
                                 height="auto"
                             />
                         {:else}
-                            <img src={EyeClosed} alt="Eye Open" width="auto" height="auto" />
+                            <img
+                                src={EyeClosed}
+                                alt="Eye Open"
+                                width="auto"
+                                height="auto"
+                            />
                         {/if}
                     </button>
                 </span>
             </div>
-            <a href={void 0} class="text-right font-bold text-red-500 mt-1 cursor-not-allowed">
+            <a
+                href={void 0}
+                class="text-right font-bold text-red-500 mt-1 cursor-not-allowed"
+            >
                 Forgot Password?
             </a>
 
             <button type="submit" class="mt-6 mb-2">
-                <img src={BtnLogin} class="cursor-pointer" alt="" width="auto" height="auto" />
+                <img
+                    src={BtnLogin}
+                    class="cursor-pointer"
+                    alt=""
+                    width="auto"
+                    height="auto"
+                />
             </button>
         </form>
         <p class="text-center patrickhand mb-1">
@@ -75,13 +94,28 @@
         <p class="patrickhand text-center mb-2">Or</p>
         <div class="flex flex-col gap-4">
             <a href={void 0} class="cursor-not-allowed">
-                <img src={BtnSignInGoogle} alt="Login with Google" width="auto" height="auto" />
+                <img
+                    src={BtnSignInGoogle}
+                    alt="Login with Google"
+                    width="auto"
+                    height="auto"
+                />
             </a>
             <a href={void 0} class="cursor-not-allowed">
-                <img src={BtnSignInApple} alt="Login with Apple" width="auto" height="auto" />
+                <img
+                    src={BtnSignInApple}
+                    alt="Login with Apple"
+                    width="auto"
+                    height="auto"
+                />
             </a>
             <a href={void 0} class="cursor-not-allowed">
-                <img src={BtnSignInFacebook} alt="Login with Facebook" width="auto" height="auto" />
+                <img
+                    src={BtnSignInFacebook}
+                    alt="Login with Facebook"
+                    width="auto"
+                    height="auto"
+                />
             </a>
         </div>
     </div>

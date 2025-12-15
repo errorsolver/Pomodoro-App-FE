@@ -1,7 +1,7 @@
 <script>
-  import MenuTable from "$lib/components/MenuTable.svelte";
+    import MenuTable from '$lib/components/MenuTable.svelte';
 
-  let { children } = $props();
+    let { children } = $props();
 </script>
 
 {@render children?.()}
