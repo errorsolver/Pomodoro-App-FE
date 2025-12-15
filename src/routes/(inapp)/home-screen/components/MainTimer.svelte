@@ -1,9 +1,11 @@
 
 <script lang="ts">
-    import { onDestroy } from 'svelte';
+    import { onDestroy, createEventDispatcher } from 'svelte';
 
     export let timeInSeconds: number = 0;
     export let isRunning: boolean = false;
+
+    const dispatch = createEventDispatcher();
 
     let currentSec = timeInSeconds;
     let interval: ReturnType<typeof setInterval> | null = null;
@@ -30,6 +32,7 @@
                     } else {
                         clearInterval(interval!);
                         interval = null;
+                        dispatch('end');
                     }
                 }, 1000);
             }
