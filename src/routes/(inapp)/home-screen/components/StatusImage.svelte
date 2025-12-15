@@ -12,3 +12,10 @@
         <img src={WomanNap} alt="Rest Status" class="status-image" />
     {/if}
 </div>
+
+<style scoped>
+    .status-image {
+        height: clamp(10px, 50vw, 180px);
+        width: auto;
+    }
+</style>
