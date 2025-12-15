@@ -7,6 +7,3 @@
 {@render children?.()}
 
 <MenuTable />
-
-<style>
-</style>

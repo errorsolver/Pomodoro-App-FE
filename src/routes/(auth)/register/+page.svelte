@@ -76,7 +76,7 @@
     </div>
 </div>
 
-<style>
+<style scoped>
     input {
         background-color: transparent;
         box-shadow: none;

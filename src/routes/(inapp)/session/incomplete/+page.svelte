@@ -92,7 +92,7 @@
     </form>
 </div>
 
-<style>
+<style scoped>
     input:focus {
         box-shadow: none;
     }
