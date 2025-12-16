@@ -6,6 +6,8 @@
     import BtnSave from '$lib/assets/img/BtnSave.svg?url';
     import BtnCancel from '$lib/assets/img/BtnCancel.svg?url';
 
+    export const prerender = false;
+
     const handleSubmit = () => {
         alert('submit');
     };
@@ -20,7 +22,7 @@
         id="list-card"
         class="col-span-3 col-start-4 flex flex-col gap-4 mb-24"
     >
-        {#each { length: 40 } as item}
+        {#each { length: 40 } as _}
             <CardShort />
         {/each}
     </div>

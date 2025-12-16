@@ -7,6 +7,8 @@
     import BtnSignInApple from '$lib/assets/img/BtnSignInApple.svg?url';
     import BtnSignInFacebook from '$lib/assets/img/BtnSignInFacebook.svg?url';
 
+    export const prerender = true;
+    
     let isShowPassword = false;
 </script>
 

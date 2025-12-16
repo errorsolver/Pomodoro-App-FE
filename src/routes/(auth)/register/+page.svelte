@@ -4,6 +4,8 @@
     import EyeOpen from '$lib/assets/img/EyeOpen.svg?url';
     import EyeClosed from '$lib/assets/img/EyeClosed.svg?url';
 
+    export const prerender = true;
+    
     let isShowPassword = false;
 </script>
 
