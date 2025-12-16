@@ -24,13 +24,11 @@
     function nextPhase() {
         if (isWork) {
             if (sets === maxSet) {
-                // Setelah work terakhir, langsung long break
                 isWork = false;
                 isShortBreak = false;
                 isLongBreak = true;
                 timeInSeconds = LONG_BREAK_DURATION;
             } else {
-                // Work selesai, ke short break
                 isWork = false;
                 isShortBreak = true;
                 isLongBreak = false;
