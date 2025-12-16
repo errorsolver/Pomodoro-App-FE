@@ -7,9 +7,7 @@
 
     const { children } = $props<{ children: unknown }>();
 
-    let url = $derived(page.url);
     let pathname = $derived(page.url.pathname);
-    let search = $derived(page.url.search);
 </script>
 
 <div class="max-w-full">
