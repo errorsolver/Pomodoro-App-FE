@@ -12,9 +12,9 @@
     let search = $derived(page.url.search);
 </script>
 
-<div class="">
+<div class="max-w-full">
     <div
-        class="flex flex-col items-center justify-self-center sticky top-0 pb-4 w-screen z-50 bg-linear-to-b from-[#F8F8F6] from-83% to-transparent to-90%"
+        class="flex flex-col items-center justify-self-center sticky top-0 pb-4 w-full max-w-full z-50 bg-linear-to-b from-[#F8F8F6] from-83% to-transparent to-90%"
     >
         <p class="text-3xl text-center">Session</p>
         <div class="flex justify-center space-x-4 mt-4">
