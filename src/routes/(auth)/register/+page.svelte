@@ -11,7 +11,7 @@
 
 <div class="flex gap-40 justify-center h-screen items-center">
     <div>
-        <img src={SleepingWoman} alt="Sleeping Woman Illustration" />
+        <img src={SleepingWoman} alt="Sleeping Woman Illustration" fetchpriority="high" />
     </div>
 
     <div>

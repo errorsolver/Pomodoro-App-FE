@@ -8,7 +8,7 @@
 </script>
 
 <nav id="header" class="flex justify-between pt-4 lg:px-16 sticky top-0">
-    <img src={pomoChanLogo} alt="Pomo Chan Logo" width="auto" height="auto" />
+    <img src={pomoChanLogo} alt="Pomo Chan Logo" width="auto" height="auto" fetchpriority="high" />
 
     <div class="flex gap-5">
         <a title="create-space" href="/register">
@@ -40,7 +40,7 @@
     </div>
 
     <div id="hero" class="flex justify-center">
-        <img src={HeroGirl} width="60%" height="auto" alt="Hero Girl Sitting" />
+        <img src={HeroGirl} width="60%" height="auto" alt="Hero Girl Sitting" fetchpriority="high" />
     </div>
 </div>
 

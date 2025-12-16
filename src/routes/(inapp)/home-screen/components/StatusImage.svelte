@@ -7,9 +7,9 @@
 
 <div class="flex justify-center mt-8">
     {#if isWork}
-        <img src={ReadingWoman} alt="Work Status" class="status-image" />
+        <img src={ReadingWoman} alt="Work Status" class="status-image" fetchpriority="high" />
     {:else}
-        <img src={WomanNap} alt="Rest Status" class="status-image" />
+        <img src={WomanNap} alt="Rest Status" class="status-image" fetchpriority="high" />
     {/if}
 </div>
 

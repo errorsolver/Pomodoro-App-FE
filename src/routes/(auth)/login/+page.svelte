@@ -19,6 +19,7 @@
             alt="Sleeping Woman Illustration"
             width="auto"
             height="auto"
+            fetchpriority="high"
         />
     </div>
 
