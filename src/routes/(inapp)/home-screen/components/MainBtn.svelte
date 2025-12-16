@@ -19,14 +19,12 @@
                 src={btnPause}
                 class="run-btn"
                 alt="Pause Button"
-                loading="lazy"
             />
         {:else}
             <img
                 src={btnPlay}
                 class="run-btn"
                 alt="Play Button"
-                loading="lazy"
             />
         {/if}
     </button>
