@@ -6,10 +6,12 @@
     import BtnSignInGoogle from '$lib/assets/img/BtnSignInGoogle.svg?url';
     import BtnSignInApple from '$lib/assets/img/BtnSignInApple.svg?url';
     import BtnSignInFacebook from '$lib/assets/img/BtnSignInFacebook.svg?url';
+    import { enhance } from '$app/forms';
 
-    export const prerender = true;
+    export let form;
     
     let isShowPassword = false;
+    let isSubmitting = false;
 </script>
 
 <div class="flex gap-40 justify-center h-screen items-center">
@@ -27,7 +29,19 @@
         <h1 class="text-5xl font-bold mb-2">Come back in</h1>
         <p class="patrickhand mb-8">Find your calm again.</p>
 
-        <form action="/home-screen" class="flex flex-col">
+        {#if form?.error}
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+                {form.error}
+            </div>
+        {/if}
+
+        <form method="POST" class="flex flex-col" use:enhance={() => {
+            isSubmitting = true;
+            return async ({ update }) => {
+                await update();
+                isSubmitting = false;
+            };
+        }}>
             <label for="email" class="font-bold">Email</label>
             <input
                 id="email"
@@ -35,6 +49,7 @@
                 name="email"
                 type="email"
                 placeholder="Enter your email"
+                required
             />
 
             <label for="password" class="font-bold">Password</label>
@@ -45,6 +60,7 @@
                     name="password"
                     type={isShowPassword ? 'text' : 'password'}
                     placeholder="Enter your password"
+                    required
                 />
                 <span class="eye">
                     <button
@@ -79,7 +95,7 @@
                 Forgot Password?
             </a>
 
-            <button type="submit" class="mt-6 mb-2">
+            <button type="submit" class="mt-6 mb-2" disabled={isSubmitting}>
                 <img
                     src={BtnLogin}
                     class="cursor-pointer"
