@@ -1,4 +1,7 @@
-import { API_URL } from '$env/static/private';
+import { env } from '$env/dynamic/private';
+
+// runtime-safe API URL (fallback to localhost if not provided)
+const API_URL = env.API_URL ?? 'http://localhost:8000';
 
 /**
  * Auth Service untuk handle semua operasi authentication
