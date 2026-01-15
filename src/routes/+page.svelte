@@ -3,8 +3,6 @@
     import CreateSpaceBtn from '$lib/assets/img/BtnCreateSpace.svg?url';
     import HeroGirl from '$lib/assets/img/HeroGirl.svg?url';
     import pomoChanLogo from '$lib/assets/logo.svg?url';
-
-    export const prerender = true;
 </script>
 
 <nav id="header" class="flex justify-between pt-4 lg:px-16 sticky top-0">
