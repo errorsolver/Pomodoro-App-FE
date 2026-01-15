@@ -6,8 +6,6 @@
     import BtnSave from '$lib/assets/img/BtnSave.svg?url';
     import BtnCancel from '$lib/assets/img/BtnCancel.svg?url';
 
-    export const prerender = false;
-
     const handleSubmit = () => {
         alert('submit');
     };

@@ -8,8 +8,6 @@
     import MainTimer from './components/MainTimer.svelte';
     import MainBtn from './components/MainBtn.svelte';
 
-    export const prerender = false;
-
     let isRunning = false;
     let isWork = true;
     let isShortBreak = false;
