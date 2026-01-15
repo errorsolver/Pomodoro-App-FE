@@ -20,7 +20,7 @@
         id="list-card"
         class="col-span-3 col-start-4 flex flex-col gap-4 mb-24"
     >
-        {#each { length: 40 } as _}
+        {#each Array.from({ length: 40 }) as _}
             <CardShort />
         {/each}
     </div>
