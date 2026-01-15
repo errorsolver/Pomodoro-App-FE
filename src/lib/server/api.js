@@ -1,10 +1,10 @@
-import { API_URL } from '$env/static/private';
+import { API_BASE } from '$env/static/private';
 
 export async function apiFetch(
     endpoint,
     options = {}
 ) {
-    return fetch(`${API_URL}${endpoint}`, {
+    return fetch(`${API_BASE}${endpoint}`, {
         ...options,
         headers: {
             'Content-Type': 'application/json',

@@ -45,12 +45,12 @@ This project uses **server-side** environment variables. Create a local `.env` f
 
 **Required variable:**
 
-- `API_URL` — Base URL for the backend API (e.g. `http://localhost:8000`). Accessed on the server via `import { API_URL } from '$env/static/private'`.
+- `API_BASE` — Base URL for the backend API (e.g. `http://localhost:8000`). Accessed on the server via `import { API_BASE } from '$env/static/private'`.
 
 **Example (`.env.example`):**
 
 ```
-API_URL=http://localhost:8000
+API_BASE=http://localhost:8000
 ```
 
 **Setup:**
@@ -63,7 +63,7 @@ API_URL=http://localhost:8000
 
 2. Start dev server: `pnpm dev` or `npm run dev`.
 
-3. For production, set `API_URL` in your deployment provider.
+3. For production, set `API_BASE` in your deployment provider.
 
 > Note: `$env/static/private` is evaluated at build time. If you need runtime server env, consider `$env/dynamic/private` instead.
 
