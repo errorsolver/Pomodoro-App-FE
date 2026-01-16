@@ -35,7 +35,7 @@
             </div>
         {/if}
 
-        <form method="POST" class="flex flex-col" use:enhance={() => {
+        <form method="POST" class="flex flex-col" autocomplete="off" use:enhance={() => {
             isSubmitting = true;
             return async ({ update }) => {
                 await update();

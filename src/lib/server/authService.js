@@ -30,8 +30,32 @@ export class AuthService {
         } catch (e) {
           // ignore parse errors
         }
-        const err = new Error(data.detail || data.message || `Request failed with status ${res.status}`);
+
+        // Normalize error message so objects/arrays don't become "[object Object]"
+        let message = `Request failed with status ${res.status}`;
+        if (data) {
+          if (typeof data.detail === 'string') {
+            message = data.detail;
+          } else if (Array.isArray(data.detail)) {
+            message = data.detail
+              .map(d => (typeof d === 'string' ? d : d.msg ?? JSON.stringify(d)))
+              .join('; ');
+          } else if (typeof data.message === 'string') {
+            message = data.message;
+          } else if (data.detail) {
+            try {
+              message = JSON.stringify(data.detail);
+            } catch (_) {
+              message = String(data.detail);
+            }
+          } else if (data.error) {
+            message = typeof data.error === 'string' ? data.error : JSON.stringify(data.error);
+          }
+        }
+
+        const err = new Error(message);
         err.status = res.status;
+        err.data = data; // attach original payload for debugging
         throw err;
       }
 
